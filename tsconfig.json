@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "outDir": "dist",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true, // この行を追加
+    "experimentalDecorators": true  // この行を追加
+  },
+  "include": ["src/**/*"]
+}
