@@ -3,6 +3,7 @@ import { User } from "./entity/User";
 import { Group } from "./entity/Group";
 import { DataType } from "./entity/DataType";
 import { Data } from "./entity/Data";
+import { Condition } from "./entity/Condition";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
@@ -13,7 +14,7 @@ export const AppDataSource = new DataSource({
   database: process.env.DB_NAME || "yourdatabase",
   synchronize: true,
   logging: false,
-  entities: [User, Group, DataType, Data],  // すべてのエンティティを含める
+  entities: [User, Group, DataType, Data, Condition],  // すべてのエンティティを含める
   migrations: [],
   subscribers: [],
 });
