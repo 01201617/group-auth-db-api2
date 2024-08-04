@@ -6,7 +6,8 @@
     "outDir": "dist",
     "sourceMap": true,
     "emitDecoratorMetadata": true, // この行を追加
-    "experimentalDecorators": true  // この行を追加
+    "experimentalDecorators": true,
+    "resolveJsonModule": true
   },
   "include": ["src/**/*"]
 }
